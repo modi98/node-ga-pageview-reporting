@@ -25,7 +25,7 @@ async function getAnalyticsData() {
   google.options({auth});
 
   const now = dayjs();
-  const viewId = '00000000' // Get this from Analytics view
+  const viewId = '00000000'; // Get this from Analytics view
 
   return await analyticsreporting.reports.batchGet({
     requestBody: {
